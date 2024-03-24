@@ -116,7 +116,7 @@ Windows在文件管理器中打开脚本所在的目录，在地址栏输入 `cm
 ```shell
 yarn
 ```
-### 填入账号密码
+### 填入账号密码（本地部署)
 打开 `src/constant.ts`,
 填入您的佳明账号及密码
 ```js
@@ -132,6 +132,23 @@ export const GARMIN_MIGRATE_NUM_DEFAULT = 100; //每次要迁移的数量，不�
 export const GARMIN_MIGRATE_START_DEFAULT = 0; // 从第几条活动开始
 
 ```
+### 填入账号密码（GitHub部署)
+打开 `src/constant.ts`,
+填入您的佳明账号及密码
+```js
+//中国区
+export const GARMIN_USERNAME_DEFAULT = 'example@example.com';
+export const GARMIN_PASSWORD_DEFAULT = 'password';
+//国际区
+export const GARMIN_GLOBAL_USERNAME_DEFAULT = 'example@example.com';
+export const GARMIN_GLOBAL_PASSWORD_DEFAULT = 'password';
+
+// 佳明迁移数量配置（批量同步历史数据使用）
+export const GARMIN_MIGRATE_NUM_DEFAULT = 100; //每次要迁移的数量，不要填太大
+export const GARMIN_MIGRATE_START_DEFAULT = 0; // 从第几条活动开始
+
+```
+
 
 ### 运行脚本
 注意： 如果执行不能成功，请尝试将梯子更换为美国IP，多更换几个ip试试
