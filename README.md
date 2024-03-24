@@ -133,19 +133,21 @@ export const GARMIN_MIGRATE_START_DEFAULT = 0; // 从第几条活动开始
 
 ```
 ### 填入账号密码（GitHub部署)
-打开 `src/constant.ts`,
+选择‘叉子’,找到上方“Setting”
+选择左侧“Secrets and variables”
+再次选择“Actions”，“Repository Secrets”
 填入您的佳明账号及密码
 ```js
-//中国区
-export const GARMIN_USERNAME_DEFAULT = 'example@example.com';
-export const GARMIN_PASSWORD_DEFAULT = 'password';
-//国际区
-export const GARMIN_GLOBAL_USERNAME_DEFAULT = 'example@example.com';
-export const GARMIN_GLOBAL_PASSWORD_DEFAULT = 'password';
+//中国区（变量名）
+GARMIN_USERNAME
+GARMIN_PASSWORD
+//国际区（变量名）
+GARMIN_GLOBAL_USERNAME
+GARMIN_GLOBAL_PASSWORD
 
 // 佳明迁移数量配置（批量同步历史数据使用）
-export const GARMIN_MIGRATE_NUM_DEFAULT = 100; //每次要迁移的数量，不要填太大
-export const GARMIN_MIGRATE_START_DEFAULT = 0; // 从第几条活动开始
+GARMIN_MIGRATE_NUM//每次要迁移的数量，不要填太大
+GARMIN_MIGRATE_START // 从第几条活动开始
 
 ```
 
