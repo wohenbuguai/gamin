@@ -1,8 +1,6 @@
 name: Migrate Garmin CN to Garmin Global
 
 on:
-  scedule: 
-    - cron: '0 19，22，24 * * *'
   workflow_dispatch:
    
 
