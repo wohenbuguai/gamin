@@ -1,7 +1,10 @@
 name: Migrate Garmin CN to Garmin Global
 
 on:
+  scedule: 
+    - cron: '0 19，22，24 * * *'
   workflow_dispatch:
+   
 
 env:
   BARK_KEY: ${{ secrets.BARK_KEY }}
